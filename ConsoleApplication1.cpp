@@ -18,6 +18,7 @@ int main(){
 	cin >> p;
 	
 		cout << Current_State(Current, p);
+		return 0;
 }
 State Current_State(State Current_State, bool P){
 	if (!P){
@@ -45,15 +46,15 @@ State Current_State(State Current_State, bool P){
 			switch (Current_State){
 
 			case R:
-				cout << "It's a Yellow Light";
+				cout << "It's a Yellow Light"<<endl;
 				return Y;
 				break;
 			case Y:
-				cout << "It's a Green Light";
+				cout << "It's a Green Light"<<endl;
 				return G;
 				break;
 			case G:
-				cout << "It's a Red Light";
+				cout << "It's a Red Light"<<endl;
 				return R;
 				break;
 			default:
